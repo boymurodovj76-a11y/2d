@@ -1,0 +1,61 @@
+
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#8be0ff">
+  <title>Cartoon World — BOYMURODOV JAHONGIR</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main class="app">
+    <header class="header">
+      <h1>🌈 CARTOON <span>WORLD</span></h1>
+      <p>Sakra, tangalarni yig‘ va marraga yet!</p>
+    </header>
+
+    <section class="hud">
+      <div class="stat"><span>🪙 Tanga</span><strong id="coins">0</strong></div>
+      <div class="stat"><span>⭐ Ball</span><strong id="score">0</strong></div>
+      <div class="stat"><span>❤️ Hayot</span><strong id="lives">3</strong></div>
+      <div class="stat"><span>🗺️ Bosqich</span><strong id="level">1 / 3</strong></div>
+    </section>
+
+    <section class="game-box">
+      <canvas id="game" width="900" height="500">
+        Brauzeringiz canvas elementini qo‘llab-quvvatlamaydi.
+      </canvas>
+
+      <div class="overlay" id="overlay">
+        <div class="modal">
+          <div id="modalIcon" class="modal-icon">🏃</div>
+          <h2 id="modalTitle">CARTOON WORLD</h2>
+          <p id="modalText">Sarguzashtga tayyormisan?</p>
+          <button id="startBtn" class="start-btn">▶ O‘YINNI BOSHLASH</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="toolbar">
+      <button id="pauseBtn" class="tool-btn">⏸ Pauza</button>
+      <button id="soundBtn" class="tool-btn">🔊 Ovoz yoqilgan</button>
+      <button id="restartBtn" class="tool-btn">↻ Qayta boshlash</button>
+    </section>
+
+    <section class="mobile-controls">
+      <button id="leftBtn" class="move-btn" aria-label="Chapga">◀</button>
+      <button id="jumpBtn" class="jump-btn">⬆ SAKRASH</button>
+      <button id="rightBtn" class="move-btn" aria-label="O‘ngga">▶</button>
+    </section>
+
+    <p class="help">
+      Kompyuter: ← → yoki A/D — yurish, SPACE/W/↑ — sakrash, P — pauza.
+      Telefonda pastdagi tugmalardan foydalan.
+    </p>
+
+    <footer>© BOYMURODOV JAHONGIR</footer>
+  </main>
+</body>
+</html>
